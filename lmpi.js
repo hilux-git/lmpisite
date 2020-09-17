@@ -1,7 +1,10 @@
 function inputBox(){
+    if(document.getElementById("searchBar").value == 36459){
+       herNameHasBeenEntered(); 
+    }else{
     document.getElementById("responce").innerHTML="Search no longer works";
-    closeFunct();
-} 
+    closeFunct();        
+}} 
 
 function closeFunct(){
     setTimeout(closeFunct2, 5000);
@@ -20,4 +23,9 @@ function forwardClickGrund(){
 function forwardClickHilux(){
    window.open("hilux.html");
     
+}
+
+
+function herNameHasBeenEntered(){
+   window.open("https://hilux-git.github.io/hiluxsite/blank.html", "_self");
 }
